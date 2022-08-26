@@ -29,22 +29,27 @@ const App = () => {
   // const 
   return(
     <div className="App">
-      <input 
-        placeholder='Name' 
-        className='nameInput'
-        id='message'
-        onChange={changeName}
-        value={nameIn}
-      ></input>
-      <input 
-        type="password"
-        placeholder='Password' 
-        className='passwordInput'
-        id='message'
-        onChange={changePassword}
-        value={passwordIn}
-        
-      ></input>
+      <div className='center'>
+        <input 
+          placeholder='Name' 
+          className='nameInput'
+          id='message'
+          onChange={changeName}
+          value={nameIn}
+        ></input>
+      </div>
+      <div className='center'>
+        <input 
+          type="password"
+          placeholder='Password' 
+          className='passwordInput'
+          id='message'
+          onChange={changePassword}
+          value={passwordIn}
+          
+        ></input>
+      </div>
+      
       <button onClick={()=>{
         if(inputName == null){
           alert("no name");
